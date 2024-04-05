@@ -22,7 +22,7 @@ func BuildUeContextCreateData(ue *amf_context.AmfUe, targetRanId models.NgRanTar
 	ueContextCreateData.TargetId = &targetRanId
 	ueContextCreateData.SourceToTargetData = &sourceToTargetData
 	ueContextCreateData.PduSessionList = pduSessionList
-	ueContextCreateData.N2NotifyUri = n2NotifyUri
+	//ueContextCreateData.N2NotifyUri = n2NotifyUri
 
 	if ue.UeRadioCapability != "" {
 		ueContextCreateData.UeRadioCapability = &models.N2InfoContent{
